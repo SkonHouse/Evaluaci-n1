@@ -2,4 +2,4 @@
 
 hola gente, que tal
 +
-![Modelo de ramas](img\gitflow.jpg)
+![Modelo de ramas](./img/gitflow.jpg)
