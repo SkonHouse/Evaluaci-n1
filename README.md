@@ -2,6 +2,7 @@
 
 Release pruebas 11-04-25 "
 Se agrega Wiki para manejo del flujo de trabajo
+Se prueban CI_CD según lógica deseada.
 
 ![Modelo de ramas](./img/gitflow.jpg)
 
