@@ -1,0 +1,20 @@
+ame: Crear PR después de merge y push
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  crear-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Crear Pull Request a main
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "🔀 Merge automático develop → main"
+          title: "🔄 Merge develop into main"
+          body: |
+            Esta Pull Request fue creada automáticamente tras un `git merge` y `push` a la rama `develop`.
+          base: main
+          branch: develop
