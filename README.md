@@ -2,7 +2,7 @@
 
 Release pruebas 11-04-25
 Se agrega Wiki para manejo del flujo de trabajo
-# Evaluaci-n1 hola
+
 ![Modelo de ramas](./img/gitflow.jpg)
 
 # 🔧 Procedimiento Git para Manejo de Ramas (Git Flow)
