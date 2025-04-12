@@ -22,3 +22,38 @@ git add .
 git commit -m "Feature xxxx función xxxx"
 git push
 git merge develop
+```
+## 🧪 `release/*` – Preparación para nueva versión
+```bash
+git checkout -b release/vX.X
+git pull origin develop
+# Realizas los commits necesarios
+git add .
+git commit -m "chore: ajustes previos a la versión vX.X"
+git push
+# Fusionar la release en main y develop
+git checkout main
+git merge release/vX.X
+git checkout develop
+git merge release/vX.X
+git push
+```
+
+## 🛠️ hotfix/* – Corrección urgente en producción
+```bash
+git checkout -b hotfix/vX.X.X
+git pull origin main
+# Realizas los commits necesarios
+git add .
+git commit -m "fix: corrección crítica en producción"
+git push
+# Fusionar la release en main y develop
+git checkout develop
+git merge hotfix/vX.X.X
+git checkout main
+git merge hotfix/vX.X.X
+```
+## 🧪 
+```bash
+
+```
