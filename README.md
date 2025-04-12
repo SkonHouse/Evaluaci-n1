@@ -53,7 +53,16 @@ git merge hotfix/vX.X.X
 git checkout main
 git merge hotfix/vX.X.X
 ```
-## 🧪 
+## 📦 develop – Rama de desarrollo
 ```bash
+# Actualizar Rama de desarrollo
+git checkout develop
+git pull origin develop
+```
+##  📌 main – Rama de producción
 
+```bash
+# Actualizar Rama de desarrollo
+git checkout main
+git pull origin main
 ```
