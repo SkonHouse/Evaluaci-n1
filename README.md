@@ -16,5 +16,9 @@ Este proyecto utiliza el modelo de ramas Git Flow. A continuación se detalla c�
 ### Crear una nueva feature:
 ```bash
 git checkout develop
-git pull origin develop
 git checkout -b feature/nombre-de-la-funcionalidad
+git pull origin develop
+git add .
+git commit -m "Feature xxxx función xxxx"
+git push
+git merge develop
