@@ -4,8 +4,8 @@ on:
   pull_request:
     types: [opened]
     branches: [main, develop]
-  push:
-    branches: [main, develop]
+  #push:
+  #  branches: [main, develop]
 
 jobs:
   comment:

@@ -1,8 +1,11 @@
-ame: Crear PR después de merge y push
+name: Crear PR después de merge y push
 
 on:
-  push:
-    branches: [develop]
+  pull_request:
+    types: [opened]
+    branches: [main, develop]
+  #push:
+  #  branches: [develop]
 
 jobs:
   crear-pr:
