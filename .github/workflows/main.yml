@@ -1,4 +1,4 @@
-name: Deploy static HTML to GitHub Pages (branch: sites)
+name: Deploy static HTML to GitHub Pages branch sites
 
 on:
   push:
