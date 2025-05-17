@@ -1,23 +1,21 @@
-name: Crear PR después de merge y push
+name: Deploy static HTML to GitHub Pages (branch: sites)
 
 on:
-  pull_request:
-    types: [opened]
-    branches: [main, develop]
-  #push:
-  #  branches: [develop]
+  push:
+    branches:
+      - main  # Cambia esto si usas otra rama principal
 
 jobs:
-  crear-pr:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Crear Pull Request a main
-        uses: peter-evans/create-pull-request@v5
+      - name: Checkout del repositorio
+        uses: actions/checkout@v3
+
+      - name: Deploy a GitHub Pages (custom branch)
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "🔀 Merge automático develop → main"
-          title: "🔄 Merge develop into main"
-          body: |
-            Esta Pull Request fue creada automáticamente tras un `git merge` y `push` a la rama `develop`.
-          base: main
-          branch: develop
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: sites  # <- Aquí especificamos que use la rama 'sites'
