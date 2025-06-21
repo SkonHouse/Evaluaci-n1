@@ -2,3 +2,6 @@ fastapi
 uvicorn
 sqlalchemy
 Django>=3.2,<5.0
+pytest
+flake8
+bandit
