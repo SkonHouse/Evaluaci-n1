@@ -1,4 +1,4 @@
-name: CD - Deploy 
+name: CD - Deploy FastAPI
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: ghcr.io/SkonHouse/Evaluacion-N2
+  IMAGE_NAME: ghcr.io/skonhouse/evaluacion-n2#
 
 jobs:
   deploy:
