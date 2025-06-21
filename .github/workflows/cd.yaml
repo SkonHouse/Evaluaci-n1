@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: ghcr.io/skonhouse/evaluacion-n2#
+  IMAGE_NAME: ghcr.io/skonhouse/evaluacion-n2
 
 jobs:
   deploy:
